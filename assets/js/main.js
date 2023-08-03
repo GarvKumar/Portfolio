@@ -101,7 +101,10 @@ const sendEmail =(e) =>{
         setTimeout(() => {
           contactMessage.textContent = "";
         }, 5000);
-      });
+      },(error)=>{
+        alert('OOPS! SOMETHING HAS FAILED......',error)
+      })
+      
   }
 
 }
