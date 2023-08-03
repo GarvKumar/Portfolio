@@ -70,6 +70,39 @@ const contactForm=document.getElementById('contact-form'),
 
 
 const sendEmail =(e) =>{
+  e.preventDefault()
+
+  //check if the field has a value
+  if (contactName.value === '' || contactEmail.value === '' || contactProject.value === '')
+  {
+    // add and  remove color
+    contactMessage.classList.remove('color-blue')
+    contactMessage.classList.add('color-red')
+
+    //show message
+    contactMessage.textContent = "Write all the input fields 📩";
+
+  }
+  else{
+    //serviceID - templateID - #form  -  publicKEY
+    emailjs
+      .sendForm(
+        "service_1ui2hik",
+        "template_varcd5d",
+        "#contact-form",
+        "sjIqbxSuFgctMDITm"
+      )
+      .then(() => {
+        //show message and add color
+        contactMessage.classList.add("color-blue");
+        contactMessage.textContent = "Message sent 📨";
+
+        //remove message after five seconds
+        setTimeout(() => {
+          contactMessage.textContent = "";
+        }, 5000);
+      });
+  }
 
 }
 

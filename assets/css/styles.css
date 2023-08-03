@@ -810,7 +810,13 @@ body.dark-theme {
   left: 1.5rem;
 }
 
+.color-red{
+  color: hsl(4,71%,50%);
+}
 
+.color-blue{
+  color: hsl(207,56%,45%);
+}
 
 /* Status color */
 
