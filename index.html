@@ -30,7 +30,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link">
+              <a href="#home" class="nav__link active-link">
                 <i class="ri-home-5-line"></i> Home
               </a>
             </li>
@@ -67,7 +67,7 @@
         </div>
         <div class="nav__buttons">
           <!-- Theme change button  -->
-          <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
           <!-- toggle button  -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-4-line"></i>
@@ -222,6 +222,14 @@
                 <h3 class="skills__name">GIT</h3>
                 <span class="skills__subtitle">Intermediate</span>
               </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/bootstrap-5-1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Bootstrap 5</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
             </div>
           </div>
           <!-- skills 2 -->
@@ -303,6 +311,36 @@
                 <h3 class="skills__name">CANVA</h3>
                 <span class="skills__subtitle">Basic</span>
               </div>
+            </div>
+          </div>
+          <!-- skills 4 -->
+          <div class="skills_content">
+            <h3 class="skills__title">
+              <i class="ri-braces-line"></i> DataBase
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/mysql-logo.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">MYSQL</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/sqlite.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">SQLite</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/postgresql.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Postgresql</h3>
+                <span class="skills__subtitle">BASIC</span>
+              </div>
+             
             </div>
           </div>
         </div>
@@ -581,9 +619,7 @@
               <!-- ================Testimonial 2 ============ -->
               <div class="testimonial__content swiper-slide">
                 <p class="testimonial__description">
-                  “Working with Garv is to give a good impression, I carry out
-                  my project at a good cost, with excellent quality and
-                  attention. Great service and recommended.”
+                  “Working with this team has been an absolute delight! Their dedication and expertise shone through every step of our project. From concept to execution, they demonstrated a keen understanding of our requirements and turned our vision into reality. The level of detail and creativity they brought to the table truly exceeded our expectations. The end result was a beautifully crafted solution that not only met but exceeded our goals. We highly recommend their services and look forward to collaborating on future projects.”
                 </p>
                 <div>
                   <h3 class="testimonial__name">Pradeep Kumar</h3>
@@ -594,9 +630,7 @@
               <!-- ================Testimonial ============ -->
               <div class="testimonial__content swiper-slide">
                 <p class="testimonial__description">
-                  “Working with Garv give a good impression, I carry out my
-                  project at a good cost, with excellent quality and attention.
-                  Great service and recommended.”
+                  “I'm incredibly impressed with the work done by this team on our recent project. Their ability to blend innovation with practicality is truly commendable. The seamless integration of design and functionality is a testament to their expertise. They took the time to understand our unique needs and tailored the solution accordingly. The communication throughout the project was excellent, keeping us informed every step of the way. We're thrilled with the outcome and wouldn't hesitate to engage them for future endeavors.”
                 </p>
                 <div>
                   <h3 class="testimonial__name">John Deol</h3>
@@ -656,6 +690,13 @@
                 </a>
               </div>
 
+              <div class="contact__data">
+                <span class="contact__data-title">Download CV</span>
+                <a href="/Garv_Kumar_Resume_16-07-2023-10-23-37.pdf" download class="contact__button">
+                Download <i class="ri-download-line"></i>
+                </a>
+              </div>
+
             </div>
           </div>
           <div class="contact__content">
@@ -693,12 +734,45 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Garv</h1>
+        <p>Full Stack Web Developer</p>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a href="https://www.linkedin.com/in/garv-kumar-8ab9a01b9/" class="footer__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="https://github.com/GarvKumar" class="footer__social-link">
+            <i class="ri-github-line"></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; Copyright CodeWithGarv. All rights reserved
+        </span>
+      </div>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
